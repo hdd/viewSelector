@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="51">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>viewSelect.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>FOR_MAYA|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cCompilerTool>
+          <includeDirectories>
+            <directoryPath>/usr/autodesk/maya/include</directoryPath>
+            <directoryPath>/usr/include</directoryPath>
+          </includeDirectories>
+          <preprocessorList>
+            <Elem>LINUX</Elem>
+            <Elem>_BOOL</Elem>
+            <Elem>INCLUDE_IOSTREAM</Elem>
+          </preprocessorList>
+        </cCompilerTool>
+        <ccCompilerTool>
+          <includeDirectories>
+            <directoryPath>/usr/include</directoryPath>
+            <directoryPath>/usr/autodesk/maya/include</directoryPath>
+          </includeDirectories>
+          <preprocessorList>
+            <Elem>LINUX</Elem>
+            <Elem>_BOOL</Elem>
+            <Elem>INCLUDE_IOSTREAM</Elem>
+          </preprocessorList>
+        </ccCompilerTool>
+        <linkerTool>
+          <linkerAddLib>
+            <directoryPath>/usr/autodesk/maya/lib</directoryPath>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>Foundation</linkerLibLibItem>
+            <linkerLibLibItem>OpenMaya</linkerLibLibItem>
+            <linkerLibLibItem>OpenMayaUI</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="viewSelect.cpp">
+        <itemTool>1</itemTool>
+      </item>
+    </conf>
+    <conf name="release" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>FOR_MAYA|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cCompilerTool>
+          <developmentMode>5</developmentMode>
+          <includeDirectories>
+            <directoryPath>/usr/autodesk/maya/include</directoryPath>
+            <directoryPath>/usr/include</directoryPath>
+          </includeDirectories>
+          <preprocessorList>
+            <Elem>LINUX</Elem>
+            <Elem>_BOOL</Elem>
+            <Elem>INCLUDE_IOSTREAM</Elem>
+          </preprocessorList>
+          <warningLevel>0</warningLevel>
+        </cCompilerTool>
+        <ccCompilerTool>
+          <developmentMode>5</developmentMode>
+          <architecture>1</architecture>
+          <includeDirectories>
+            <directoryPath>/usr/include</directoryPath>
+            <directoryPath>/usr/autodesk/maya/include</directoryPath>
+          </includeDirectories>
+          <preprocessorList>
+            <Elem>LINUX</Elem>
+            <Elem>_BOOL</Elem>
+            <Elem>INCLUDE_IOSTREAM</Elem>
+            <Elem>DREQUIRE_IOSTREAM</Elem>
+            <Elem>AW_NEW_IOSTREAMS</Elem>
+          </preprocessorList>
+          <warningLevel>0</warningLevel>
+        </ccCompilerTool>
+        <fortranCompilerTool>
+          <architecture>1</architecture>
+        </fortranCompilerTool>
+        <linkerTool>
+          <linkerAddLib>
+            <directoryPath>/usr/autodesk/maya/lib</directoryPath>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>Foundation</linkerLibLibItem>
+            <linkerLibLibItem>OpenMaya</linkerLibLibItem>
+            <linkerLibLibItem>OpenMayaUI</linkerLibLibItem>
+            <linkerLibLibItem>OpenMayaAnim</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="viewSelect.cpp">
+        <itemTool>1</itemTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
